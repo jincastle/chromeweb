@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+body {
+   text-align: center;
+   margin-top: 27%;
+}
+
 .hidden {
    display: none;
 }
@@ -13,3 +18,17 @@
    z-index: -1; 
    animation: fadeIn 0.5s linear;
 }
+
+.form,
+.greetings {
+  display: none;
+}
+
+input {
+   background-color: transparent;
+}
+
+
+
+
+
