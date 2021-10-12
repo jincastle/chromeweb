@@ -44,13 +44,11 @@
     </section>
     <section id=images-up>
         <div>
-            <h1> Upload a File
-            </h1>
+            <h1> Upload a File</h1>
+            </div>
+            <div id="canv"></div>
             <div>
-            <canvas id="canv">
-            </canvas>
-            <div>
-            <input type="file" multiple="false" accept="image/*" onchange=upload() id = "finput">
+            <input type="file" multiple="false" accept="image/*" onchange=upload(event) id = "img">
         </div>
     </section>
 
