@@ -7,31 +7,54 @@
     <link rel="stylesheet" href="/chromeweb/css/style.css">
     <title>Clock</title>
 </head>
-<body style>
+<body id="style">
+
     <div id="weather">
-        <span></span>
-        <span></span>
+        <span class="weather"></span>
+        <span class="city"></span>
     </div>
-    <h2 id="clock">00:00:00</h2>
-    <form id="login-form" class = "hidden">
-        <input 
-        required 
-        maxlength="15" 
-        type="text" 
-        placeholder="what is your name?"
-        /><br>
-        <input type="submit" value="Check"/>
-    </form>
-    
-    <h1 id="greeting" class = hidden></h1>
-    <form id="todo-form">
-        <input type="text" placeholder="Write a To Do and Press Enter" required />
-    </form>
-    <div id="quote">
-        <span></span>
-        <span></span>
-    </div>
-    
+
+    <section id="warp">
+
+        <h2 id="clock">00:00:00</h2>
+
+        <form id="login-form" class = "hidden">
+            <input 
+            required 
+            maxlength="15" 
+            type="text" 
+            placeholder="what is your name?"
+            /><br>
+            <input type="submit" value="Check"/>
+        </form>
+
+        <h1 id="greeting" class = "hidden"></h1>
+        <button id='btn' class = "hidden" type = "button">logout</button>
+
+    </section>
+
+    <section id="work">
+        <div id="quote">
+            <span></span><br>
+            <span></span>
+        </div>
+        <form id="todo-form">
+            <input type="text" placeholder="Write a To Do and Press Enter" required />
+        </form>
+    </section>
+    <section id=images-up>
+        <div>
+            <h1> Upload a File
+            </h1>
+            <div>
+            <canvas id="canv">
+            </canvas>
+            <div>
+            <input type="file" multiple="false" accept="image/*" onchange=upload() id = "finput">
+        </div>
+    </section>
+
+
     <ul id="todo-list"></ul>
     <script src="js/login.js"></script>
     <script src="js/clock.js"></script>
@@ -39,5 +62,6 @@
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/image.js"></script>
 </body>
 </html>

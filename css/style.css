@@ -1,8 +1,8 @@
 @charset "utf-8";
 
-body {
-   text-align: center;
-   margin-top: 27%;
+* {
+   margin: 0;
+   padding: 0;
 }
 
 .hidden {
@@ -19,15 +19,54 @@ body {
    animation: fadeIn 0.5s linear;
 }
 
-.form,
-.greetings {
-  display: none;
+#weather {
+   display: flex;
+   position: relative;
+   color: white;
 }
 
-input {
-   background-color: transparent;
+
+section#warp {
+   display: flex;
+   text-align: center;
+   align-items: center;
+   flex-direction: column;
+   margin-top: 10%;
 }
 
+#clock {
+   font-size: 100px;
+   margin-bottom: 50px;
+   color: white;
+ }
+ 
+ #clock span {
+   font-family: "Oswald", sans-serif;
+ }
+
+section#work {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+ }
+
+ section#work #quote {
+    color: white;
+ }
+
+button {
+   width: 40px;
+   height: 20px;
+
+ }
+
+ canvas{
+    width:600px;
+    height:300px;
+    border:1px solid}
+ section#images-up{
+    background:lightgrey
+   }
 
 
 
