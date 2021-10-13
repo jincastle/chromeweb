@@ -1,3 +1,4 @@
+const reader = new FileReader();
 function upload(event){
     const reader = new FileReader();
 
@@ -9,5 +10,15 @@ function upload(event){
     }
     reader.readAsDataURL(event.target.files[0]);
   }
+
+  const imgDel = document.querySelector("#del-img");
+
+  function resetImage(imgDel) {
+    reader.reset()
+  }
+  imgDel.addEventListener("click", delImage);
+
+
+
 
   
