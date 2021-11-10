@@ -16,7 +16,9 @@ function upload(event){
   function resetImage(imgDel) {
     reader.reset()
   }
-  imgDel.addEventListener("click", delImage);
+
+  
+  imgDel.addEventListener("click", resetImage);
 
 
 
